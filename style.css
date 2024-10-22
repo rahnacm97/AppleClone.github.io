@@ -315,7 +315,7 @@ sup{
 
 .grid-item .button-group1 {
     display: flex;
-    gap: 15px; /* Space between buttons */
+    gap: 20px; /* Space between buttons */
     justify-content: center;
 }
 
