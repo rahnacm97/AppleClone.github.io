@@ -1,0 +1,615 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+header {
+    position: fixed;
+    top: 0; /* Sticks to the top */
+    left: 0; /* Aligns to the left */
+    right: 0; /* Aligns to the right */
+    background-color: #141414;
+    padding: 10px 10px;
+    color: white;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 40px;
+    display: flex;
+    justify-content: center; /* Centers all the navbar items horizontally */
+    align-items: center;
+    gap: 30px; 
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    margin: 0px 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('images/1.png');
+    background-size: 1040px;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;  
+    text-align: center;
+    color: white;
+    background-color: #141414;
+    cursor: pointer;
+}
+
+.hero-content {
+    position: absolute;
+}
+
+.hero-content h1 {
+    top: 25%;
+    font-size: 45px;
+    margin-bottom: 0px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-top: 5px;
+}
+.button-group {
+    display: flex;
+     /* Space between buttons */
+    justify-content: center;
+    margin-top: 280px;/* Space between text and buttons */
+}
+.button{
+    background-color: #0071e3;
+    font-size: 17px;
+    padding: 13px 25px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Ensure buttons align inline */
+    margin: 10px; /* Add margin to space buttons out */
+}
+.btn{
+    background-color: transparent;
+    border: 1px solid;
+    border-color: #0071e3;
+    font-size: 17px;
+    padding: 13px 25px;
+    border-radius: 30px;
+    color: #0071e3;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Ensure buttons align inline */
+    margin: 10px; /* Add margin to space buttons out */
+}
+
+/* Hover Effect */
+.button:hover{
+    background-color: #0c84fc;
+}
+.btn:hover {
+    background-color: #0c84fc;
+    color: white;
+}
+.hero-content .intelli{
+    color: gray;
+    font-size: 14px;
+    margin-top: 10px;
+}
+sup{
+    font-size: 12px;
+}
+/* Main Section Styling */
+.main {
+    margin-top: 10px;
+    position: relative;
+    background-image: url('images/2.png');
+    background-size: 1040px;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;  
+    text-align: center;
+    color: white;
+    background-color: #141414;
+    cursor: pointer;
+}
+.hero-content .intelli1{
+    color: rgb(78, 77, 77);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.main1 {
+    margin-top: 10px;
+    position: relative;
+    background-image: url('images/3.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;  
+    text-align: center;
+    background-color: #141414;
+    cursor: pointer;
+    font-weight: 600;
+    color: #2d2d2d;
+    letter-spacing: 1px;
+}
+.main1 img{
+    height: 42px;
+    width: 40px;
+}
+.main1 .main1p1{
+    font-size: 23px; 
+    margin: 0;  
+}
+.main1 .main1p{
+    font-size: 27px;
+    margin: 5px;
+    letter-spacing: 0;
+}
+
+.main1 .button-group{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.image-grid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 10px; /* Space between grid items */
+    margin: 10px; /* Margin around the grid */
+}
+
+.grid-item {
+    position: relative; /* Required for absolute positioning of content */
+    /* Hide overflow for images */
+}
+
+.grid-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom gap */
+}
+
+/* Content at the bottom of the image */
+.grid-item .content1 {
+    position: absolute;
+    bottom: 70px; /* Align content at the bottom */
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.content1 h1{
+    font-size: 40px;
+    margin: 0;
+}
+.content1 p{
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+.grid-item .content2 {
+    position: absolute;
+    top: 0; /* Align content at the top */
+    left: 0;
+    right: 0;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+.content2 h1{
+    margin-top: 40px; /* Space above the heading */
+    margin-bottom: 0; /* Remove bottom margin if needed */
+    font-size: 40px;
+}
+.content2 p{
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+.content2 .p1{
+    font-size: 14px;
+    color: #686868;
+}
+.content2 .intelli2{
+    color: gray;
+    font-size: 14px;
+    margin-top: 340px;
+}
+/* Content at the top of the image */
+.grid-item .content3 {
+    position: absolute;
+    top: 0; /* Align content at the top */
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 10px;
+    text-align: center;   
+}
+.content3 h1 {
+    margin-top: 40px; /* Space above the heading */
+    margin-bottom: 0; /* Remove bottom margin if needed */
+    font-size: 40px;
+    display: flex; /* Make the h1 a flex container */
+    align-items: center; /* Vertically center the image and text */
+    justify-content: center; /* Center the entire h1 block */
+}
+.content3 .p2{
+    font-size: 15px;
+    margin: 0 0 10px 0;
+    color: rgb(238, 102, 18);
+    letter-spacing: 2px;
+}
+.content3 p{
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+.content3 img {
+    height: 40px;
+    width: 35px;
+}
+.grid-item .content4 {
+    position: absolute;
+    top: 0; /* Align content at the top */
+    left: 0;
+    right: 0;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+.content4 h1 {
+    margin-top: 40px; /* Space above the heading */
+    margin-bottom: 0; /* Remove bottom margin if needed */
+    font-size: 40px;
+    display: flex; /* Make the h1 a flex container */
+    align-items: center; /* Vertically center the image and text */
+    justify-content: center; /* Center the entire h1 block */
+}
+.content4 p{
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+.content4 img {
+    height: 40px;
+    width: 35px;
+ /* Optional, flexbox handles spacing with 'gap' */
+    
+}
+
+.grid-item:hover .content1, .grid-item:hover .content2, .grid-item:hover .content3 {
+    cursor: pointer;
+}
+
+.grid-item .button-group1 {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+    justify-content: center;
+}
+
+.button1, .butn1 {
+    background-color: #0071e3;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+.butn1 {
+    border-color: #0071e3;
+    background-color: transparent;
+    border: 1px solid;
+    color: #005bb5;
+}
+
+.button1:hover{
+    background-color: #005bb5; /* Darker color on hover */
+}
+.butn1:hover {
+    border-color: #0071e3;
+    background-color: #0669cd; /* Darker color on hover */
+    color: white;
+}
+
+.Video {
+    margin-top: 10px;
+    position: relative;
+    background-image: url('images/3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;  
+    text-align: center;
+    color: white;
+    background-color: #141414;
+    cursor: pointer;
+}
+.video-content {
+    position: absolute;
+    bottom: 0px;
+}
+.video-content p {
+    margin-top: 70px;
+    font-size: 30px;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin: 10px;
+}
+.video-content .submerged {
+    margin-top: 0px;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 70px; /* Change the font size to your preference */
+    color: white; /* Optional: Change text color if needed */ /* Optional: Add spacing between letters */
+}
+.button-group1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;/* Space between text and buttons */
+    gap: 0;
+}
+.btn2{
+    background-color: rgb(231, 230, 230);
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: black;
+    text-decoration: none;
+    display: inline-block; /* Ensure buttons align inline */
+    margin: 10px; /* Add margin to space buttons out */
+}
+.btn2:hover {
+    background-color: white;
+}
+.btn3 {
+    background-color: transparent;
+    font-size: 20px;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+}
+.btn3:hover{
+    text-decoration: underline;
+}
+
+.points-container {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.point {
+    width: 9px;
+    height: 9px;
+    background-color: lightgray;
+    border-radius: 50%; /* Makes the div a circle */
+}
+
+/* Hover effect to change the color to dark gray */
+.point:hover {
+    cursor: pointer;
+    background-color: rgb(70, 70, 70);  
+}
+.moving{
+    margin-top: 5px;
+}
+.moving-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.moving-item {
+    position: relative; 
+    overflow: hidden; /* Ensure the shading stays within the item */
+}
+
+.moving-item img {
+    width: 100%;
+}
+
+.moving-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    opacity: 0;
+    z-index: 1; /* Ensures the shading layer is below the button */
+}
+
+.moving-item:hover::before {
+    opacity: 0.5; /* Show the shading on hover */
+}
+
+/* Button styling */
+.hover-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 15px;
+    z-index: 2; /* Ensures the button stays above the shading */
+}
+
+/* Show button on hover */
+.moving-item:hover .hover-button {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Footer */
+footer {
+    position: relative;
+    margin-top: 10px;
+    background-color: rgb(250, 247, 247);
+    padding: 20px 40px; /* Combined padding for top/bottom and left/right */
+    border-top: 1px solid #ebeaea;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    max-width: 1200px; /* Limits the width for centered content */
+    margin: 0 auto; /* Centers the footer horizontally */
+}
+
+.footer-content {
+    max-width: 1200px;
+    width: 100%;
+    color: #686868;
+}
+
+.footer-content ol,ul,.container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.footer-content li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.footer-content ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    list-style: none;
+}
+.footer-content ul li a{
+    text-decoration: underline; /* Underline on hover */
+}
+
+hr{
+    width: 83%; /* Set the length of the line */
+    margin: auto; /* Centers the line horizontally */
+    margin-top: 10px;
+    color: #686868;
+    margin-bottom: 10px;
+}
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    width: 18%; /* Set equal width for all columns */
+}
+.column p {
+    color: rgb(68, 67, 67);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.column p:nth-of-type(2) {
+    margin-top: 20px; /* Space above Apple Wallet heading */
+}
+.column ul {
+    list-style-type: none;
+    padding: 0;
+}
+.column li {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.column li:hover {
+    text-decoration: underline;
+}
+.footer-p{
+    margin-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.footer-p a{
+    color: #0c84fc;
+    text-decoration: underline;
+}
+.footer-last{
+    display: flex; /* Use flexbox to align items in a row */
+     /* Vertically align items */
+    gap: 25px; /* Add space between the copyright and the nav */
+    font-size: 12px;
+}
+
+.footer-last p {
+    padding-left: 100px;
+    text-align: left;
+    margin-bottom: 10px;
+
+}
+.nav {
+    display: flex;
+    justify-content: center; /* Center the links */
+    align-items: center;
+    gap: 10px; /* Optional: Add spacing between links */
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 0 10px;
+    position: relative;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+}
+
+/* Add a vertical line after each link except the last one */
+.nav a:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -10px;/* Adjust this for spacing */
+    color: rgb(68, 67, 67);
+}
+.country{
+    position: absolute; /* Absolute positioning to place it at the bottom right */
+    right: 0; /* Align it to the right */
+    padding-right: 143px;
+}
+.country:hover{
+    text-decoration: underline;
+}
