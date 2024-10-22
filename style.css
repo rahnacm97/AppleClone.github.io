@@ -11,9 +11,9 @@ a {
 }
 header {
     position: fixed;
-    top: 0; /* Sticks to the top */
-    left: 0; /* Aligns to the left */
-    right: 0; /* Aligns to the right */
+    top: 0; 
+    left: 0; 
+    right: 0; 
     background-color: #141414;
     padding: 10px 10px;
     color: white;
@@ -27,7 +27,7 @@ header {
     display: flex;
     padding: 0 40px;
     display: flex;
-    justify-content: center; /* Centers all the navbar items horizontally */
+    justify-content: center; 
     align-items: center;
     gap: 30px; 
 }
@@ -49,7 +49,6 @@ header {
     height: 20px;
 }
 
-/* Hero Section */
 .hero {
     position: relative;
     background-image: url('images/1.png');
@@ -80,9 +79,8 @@ header {
 }
 .button-group {
     display: flex;
-     /* Space between buttons */
     justify-content: center;
-    margin-top: 280px;/* Space between text and buttons */
+    margin-top: 280px;
 }
 .button{
     background-color: #0071e3;
@@ -92,8 +90,8 @@ header {
     color: white;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    display: inline-block; /* Ensure buttons align inline */
-    margin: 10px; /* Add margin to space buttons out */
+    display: inline-block; 
+    margin: 10px;
 }
 .btn{
     background-color: transparent;
@@ -105,11 +103,10 @@ header {
     color: #0071e3;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    display: inline-block; /* Ensure buttons align inline */
-    margin: 10px; /* Add margin to space buttons out */
+    display: inline-block; 
+    margin: 10px; 
 }
 
-/* Hover Effect */
 .button:hover{
     background-color: #0c84fc;
 }
@@ -125,7 +122,7 @@ header {
 sup{
     font-size: 12px;
 }
-/* Main Section Styling */
+
 .main {
     margin-top: 10px;
     position: relative;
@@ -185,26 +182,24 @@ sup{
 .image-grid {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 10px; /* Space between grid items */
-    margin: 10px; /* Margin around the grid */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    margin: 10px; 
 }
 
 .grid-item {
-    position: relative; /* Required for absolute positioning of content */
-    /* Hide overflow for images */
+    position: relative;
 }
 
 .grid-item img {
-    width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove bottom gap */
+    width: 100%; 
+    height: auto;
+    display: block; 
 }
 
-/* Content at the bottom of the image */
 .grid-item .content1 {
     position: absolute;
-    bottom: 70px; /* Align content at the bottom */
+    bottom: 70px; 
     left: 0;
     right: 0;
     color: white;
@@ -222,7 +217,7 @@ sup{
 }
 .grid-item .content2 {
     position: absolute;
-    top: 0; /* Align content at the top */
+    top: 0; 
     left: 0;
     right: 0;
     color: black;
@@ -231,8 +226,8 @@ sup{
     align-items: center;
 }
 .content2 h1{
-    margin-top: 40px; /* Space above the heading */
-    margin-bottom: 0; /* Remove bottom margin if needed */
+    margin-top: 40px; 
+    margin-bottom: 0; 
     font-size: 40px;
 }
 .content2 p{
@@ -248,10 +243,10 @@ sup{
     font-size: 14px;
     margin-top: 340px;
 }
-/* Content at the top of the image */
+
 .grid-item .content3 {
     position: absolute;
-    top: 0; /* Align content at the top */
+    top: 0; 
     left: 0;
     right: 0;
     color: white;
@@ -259,12 +254,12 @@ sup{
     text-align: center;   
 }
 .content3 h1 {
-    margin-top: 40px; /* Space above the heading */
-    margin-bottom: 0; /* Remove bottom margin if needed */
+    margin-top: 40px; 
+    margin-bottom: 0; 
     font-size: 40px;
-    display: flex; /* Make the h1 a flex container */
-    align-items: center; /* Vertically center the image and text */
-    justify-content: center; /* Center the entire h1 block */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
 .content3 .p2{
     font-size: 15px;
@@ -282,7 +277,7 @@ sup{
 }
 .grid-item .content4 {
     position: absolute;
-    top: 0; /* Align content at the top */
+    top: 0; 
     left: 0;
     right: 0;
     color: black;
@@ -291,12 +286,12 @@ sup{
     align-items: center;
 }
 .content4 h1 {
-    margin-top: 40px; /* Space above the heading */
-    margin-bottom: 0; /* Remove bottom margin if needed */
+    margin-top: 40px;
+    margin-bottom: 0; 
     font-size: 40px;
-    display: flex; /* Make the h1 a flex container */
-    align-items: center; /* Vertically center the image and text */
-    justify-content: center; /* Center the entire h1 block */
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
 }
 .content4 p{
     font-size: 20px;
@@ -305,8 +300,6 @@ sup{
 .content4 img {
     height: 40px;
     width: 35px;
- /* Optional, flexbox handles spacing with 'gap' */
-    
 }
 
 .grid-item:hover .content1, .grid-item:hover .content2, .grid-item:hover .content3 {
@@ -336,11 +329,11 @@ sup{
 }
 
 .button1:hover{
-    background-color: #005bb5; /* Darker color on hover */
+    background-color: #005bb5; 
 }
 .butn1:hover {
     border-color: #0071e3;
-    background-color: #0669cd; /* Darker color on hover */
+    background-color: #0669cd; 
     color: white;
 }
 
@@ -371,13 +364,13 @@ sup{
 .video-content .submerged {
     margin-top: 0px;
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 70px; /* Change the font size to your preference */
-    color: white; /* Optional: Change text color if needed */ /* Optional: Add spacing between letters */
+    font-size: 70px; 
+    color: white; 
 }
 .button-group1 {
     display: flex;
     justify-content: center;
-    margin-top: 0px;/* Space between text and buttons */
+    margin-top: 0px;
     gap: 0;
 }
 .btn2{
@@ -387,8 +380,8 @@ sup{
     border-radius: 30px;
     color: black;
     text-decoration: none;
-    display: inline-block; /* Ensure buttons align inline */
-    margin: 10px; /* Add margin to space buttons out */
+    display: inline-block; 
+    margin: 10px; 
 }
 .btn2:hover {
     background-color: white;
@@ -418,10 +411,9 @@ sup{
     width: 9px;
     height: 9px;
     background-color: lightgray;
-    border-radius: 50%; /* Makes the div a circle */
+    border-radius: 50%; 
 }
 
-/* Hover effect to change the color to dark gray */
 .point:hover {
     cursor: pointer;
     background-color: rgb(70, 70, 70);  
@@ -440,7 +432,7 @@ sup{
 
 .moving-item {
     position: relative; 
-    overflow: hidden; /* Ensure the shading stays within the item */
+    overflow: hidden; 
 }
 
 .moving-item img {
@@ -454,16 +446,15 @@ sup{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    background-color: rgba(0, 0, 0, 0.5); 
     opacity: 0;
-    z-index: 1; /* Ensures the shading layer is below the button */
+    z-index: 1; 
 }
 
 .moving-item:hover::before {
-    opacity: 0.5; /* Show the shading on hover */
+    opacity: 0.5; 
 }
 
-/* Button styling */
 .hover-button {
     position: absolute;
     top: 50%;
@@ -477,28 +468,25 @@ sup{
     opacity: 0;
     visibility: hidden;
     font-size: 15px;
-    z-index: 2; /* Ensures the button stays above the shading */
+    z-index: 2;
 }
 
-/* Show button on hover */
 .moving-item:hover .hover-button {
     opacity: 1;
     visibility: visible;
 }
 
-
-/* Footer */
 footer {
     position: relative;
     margin-top: 10px;
     background-color: rgb(250, 247, 247);
-    padding: 20px 40px; /* Combined padding for top/bottom and left/right */
+    padding: 20px 40px; 
     border-top: 1px solid #ebeaea;
     display: flex;
     justify-content: center;
     font-size: 12px;
-    max-width: 1200px; /* Limits the width for centered content */
-    margin: 0 auto; /* Centers the footer horizontally */
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .footer-content {
@@ -522,12 +510,12 @@ footer {
     list-style: none;
 }
 .footer-content ul li a{
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; 
 }
 
 hr{
-    width: 83%; /* Set the length of the line */
-    margin: auto; /* Centers the line horizontally */
+    width: 83%; 
+    margin: auto; 
     margin-top: 10px;
     color: #686868;
     margin-bottom: 10px;
@@ -538,7 +526,7 @@ hr{
 }
 
 .column {
-    width: 18%; /* Set equal width for all columns */
+    width: 18%; 
 }
 .column p {
     color: rgb(68, 67, 67);
@@ -546,7 +534,7 @@ hr{
     margin-bottom: 10px;
 }
 .column p:nth-of-type(2) {
-    margin-top: 20px; /* Space above Apple Wallet heading */
+    margin-top: 20px; 
 }
 .column ul {
     list-style-type: none;
@@ -569,9 +557,8 @@ hr{
     text-decoration: underline;
 }
 .footer-last{
-    display: flex; /* Use flexbox to align items in a row */
-     /* Vertically align items */
-    gap: 25px; /* Add space between the copyright and the nav */
+    display: flex;
+    gap: 25px; 
     font-size: 12px;
 }
 
@@ -583,9 +570,9 @@ hr{
 }
 .nav {
     display: flex;
-    justify-content: center; /* Center the links */
+    justify-content: center; 
     align-items: center;
-    gap: 10px; /* Optional: Add spacing between links */
+    gap: 10px; 
 }
 
 .nav a {
@@ -598,16 +585,15 @@ hr{
     text-decoration: underline;
 }
 
-/* Add a vertical line after each link except the last one */
 .nav a:not(:last-child)::after {
     content: "|";
     position: absolute;
-    right: -10px;/* Adjust this for spacing */
+    right: -10px;
     color: rgb(68, 67, 67);
 }
 .country{
-    position: absolute; /* Absolute positioning to place it at the bottom right */
-    right: 0; /* Align it to the right */
+    position: absolute; 
+    right: 0;
     padding-right: 143px;
 }
 .country:hover{
